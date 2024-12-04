@@ -5,15 +5,17 @@
 </head>
 
 <style type="text/css">
-    @font-face{
+
+    @font-face {
         font-family: headFont;
         src: url(ui/fonts/Summer-Vibes-OTF.otf);
     }
-    @font-face{
+    @font-face {
         font-family: myFont;
         src: url(ui/fonts/OpenSans-Regular.ttf);
     }
-    #wrapper{
+
+    #wrapper {
         max-width: 900px;
         min-height: 500px;
         display: flex;
@@ -22,24 +24,19 @@
         font-family: myFont;
         font-size: 13px;
     }
-
-
-    #left_panel{
+    #left_panel {
         min-height: 500px;
         background-color: #27344b;
         flex: 1;
         text-align: center;
     }
-
-
-    #profile_image{
+    #profile_image {
         width: 50%;
         border-radius: 50%;
         margin: 10px;
-        border: solid thin white;
-        
+        border: solid thin white;    
     }
-    #left_panel label{
+    #left_panel label {
         width: 100%;
         height: 20px;
         display: block;
@@ -48,21 +45,17 @@
         cursor: pointer;
         padding: 5px;
     }
-    #left_panel label:hover{
+    #left_panel label:hover {
         background-color: #778593;
     }
-    #left_panel label img{
+    #left_panel label img {
         float: right;
         width: 25px;
-
     }
-
-
-    #right_panel{
+    #right_panel {
         min-height: 500px;
         flex: 4;
     }
-
     #header {
         height: 70px;
         background-color: #485b6c;
@@ -70,19 +63,18 @@
         font-family: headFont;
         text-align: center;
     }
-
-    #inner_left_panel{
+    #inner_left_panel {
         min-height: 430px;
         background-color: #383e48;
         flex: 1;
         text-align: center;
     }
-
-    #inner_right_panel{
+    #inner_right_panel {
         min-height: 430px;
         background-color: #f2f7f8;
         flex: 2;
     }
+    
 </style>
 
 <body>
