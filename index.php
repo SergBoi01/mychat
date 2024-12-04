@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Chat</title>
+    <title>Instant Chat App</title>
 </head>
 
 <style type="text/css">
@@ -13,7 +13,7 @@
     }
 
     #left_panel{
-        
+
     }
 </style>
 
