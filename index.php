@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Instant Chat App</title>
+    <title>Super cool </title>
 </head>
 
 <style type="text/css">
