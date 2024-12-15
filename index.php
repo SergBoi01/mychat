@@ -44,6 +44,7 @@
         border-bottom: solid thin #ffffff55;
         cursor: pointer;
         padding: 5px;
+        transition: all 1s ease;
     }
     #left_panel label:hover {
         background-color: #778593;
@@ -73,8 +74,14 @@
         min-height: 430px;
         background-color: #f2f7f8;
         flex: 2;
+        transition: all 1s ease;
     }
-    
+    #radio_contacts:checked ~ #inner_right_panel {
+        flex: 0;
+    }
+    #radio_settings:checked ~ #inner_right_panel {
+        flex: 0;
+    }
 </style>
 
 <body>
@@ -92,22 +99,30 @@
                 <br>
                 <br>
                 <div>
-                    <label for="box">Chat<img src="ui/icons/chat.png"></label>
-                    <label>Contacts<img src="ui/icons/contacts.png"></label>
-                    <label>Settings<img src="ui/icons/settings.png"></label>
+                    <label id="label_chat" for="radio_chat">Chat<img src="ui/icons/chat.png"></label>
+                    <label id="label_contacts" for="radio_contacts">Contacts<img src="ui/icons/contacts.png"></label>
+                    <label id="label_settings" for="radio_settings">Settings<img src="ui/icons/settings.png"></label>
                 </div>
             </div>
         </div>
 
         <div id="right_panel">
 
-            <div id="header">My App</div>
+            <div id="header">My Chat</div>
             <div id="container" style="display: flex;">
-
+                
                 <div id="inner_left_panel">
-                    <input type ="checkbox" id="box" name="">
-                </div>                
-                <div id="inner_right_panel"></div>
+                    
+                </div> 
+                
+                <input type ="radio" id="radio_chat" name="myradio" style="display: none;">
+                <input type ="radio" id="radio_contacts" name="myradio" style="display: none;">
+                <input type ="radio" id="radio_settings" name="myradio" style="display: none;">
+                
+                                
+                <div id="inner_right_panel">
+
+                </div>
 
             </div>
         </div>
