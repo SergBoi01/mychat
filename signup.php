@@ -69,6 +69,7 @@
         
         <form>
             <input type="text" name="username" placeholder="Username"><br>
+            <input type="text" name="email" placeholder="Email"><br>
             <div style="padding:10px">
                 <br>Gender:<br>
                 <input type="radio" name="gender"> Male <br>
