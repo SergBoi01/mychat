@@ -1,8 +1,9 @@
 <?php
 
-$data = file_get_contents("php://input");
-$data = json_decode($data);
+require_once("classes/initialize.php");
 
-echo "<pre>";
-print_r($data);
-echo "<pre>";
+
+$DB = new Database();
+
+$data = file_get_contents("php://input");
+$myobject = json_decode($data);
