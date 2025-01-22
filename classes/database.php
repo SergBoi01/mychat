@@ -23,4 +23,20 @@ Class Database{
         }
         return false;
     }
+
+    //write to database
+    public function write($query, $data_array = []){
+        $con = $this->connect();
+        $statement = $con->prepare($query);
+
+        foreach ($data_array as $key => $value) {
+            $statement->bindParam(':'.$key, $value);
+        }
+        $check = $statement->execute();
+        if ($check){
+            return true;
+        } 
+        return false;
+
+    }
 }
